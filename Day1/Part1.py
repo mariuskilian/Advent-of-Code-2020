@@ -1,4 +1,4 @@
-txt = open("P1_input.txt").read().split()
+txt = open("input.txt").read().split()
 
 for i in range(len(txt)):
     for j in range(i):
