@@ -1,4 +1,5 @@
-track = open("Day3/input.txt").read().splitlines()
+input = open("Day3/input.txt").read()
+track = input.splitlines()
 
 # Part 1
 num_trees = 0

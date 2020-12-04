@@ -1,8 +1,8 @@
-txt = open("Day2/input.txt").read().splitlines()
+input = open("Day2/input.txt").read().splitlines()
 
 # Part 1
 num_valid_pass = 0
-for line in txt:
+for line in input:
     parts = line.split()
     lim = [int(n) for n in parts[0].split('-')]
     ltr = parts[1].strip(':')
@@ -13,7 +13,7 @@ print(num_valid_pass)
 
 # Part 2
 num_valid_pass = 0
-for line in txt:
+for line in input:
     parts = line.split()
     lim = [int(n) for n in parts[0].split('-')]
     ltr = parts[1].strip(':')
@@ -25,7 +25,7 @@ print(num_valid_pass)
 # Combined solution
 part_1 = 0
 part_2 = 0
-for line in txt:
+for line in input:
     parts = line.split()
     lim = [int(n) for n in parts[0].split('-')]
     ltr = parts[1].strip(':')
