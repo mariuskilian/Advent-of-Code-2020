@@ -18,7 +18,7 @@ def can_contain(bag):
             bags.add(b_r)
             for b in can_contain(b_r): bags.add(b)
     return bags
-print(ccsg := can_contain("shiny gold bag"), "\nLength: ", len(ccsg))
+print(len(can_contain("shiny gold bag")))
 
 # Part 2
 def count_bags_in(bag):
@@ -27,3 +27,9 @@ def count_bags_in(bag):
         count += int(s_bags[b]) * (1 + count_bags_in(b))
     return count
 print(count_bags_in("shiny gold bag"))
+
+# Combined solution
+part1 = len(can_contain("shiny gold bag"))
+part2 = count_bags_in("shiny gold bag")
+print("Part 1 solution: " + str(part1))
+print("Part 2 solution: " + str(part2))
