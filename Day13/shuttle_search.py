@@ -26,7 +26,6 @@ def lcm(a, b): return int(a*b / math.gcd(a,b))
 t = 0
 t_step = max(busses)
 while busses:
-    print(t_step)
     busses_tmp = busses.copy()
     for bid in busses_tmp:
         b_t = t + busses_tmp[bid]
